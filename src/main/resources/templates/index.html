@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mission Page</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/styleRegister.css" rel="stylesheet" />
+</head>
+<body>
+<div class="full-section">
+    <div class="left-side">
+        <canvas id="canvas"></canvas>
+    </div>
+    <div class="right-side">
+        <div class="menu-btn">&#9776;</div>
+        <div class="content-wrapper">
+            <form class="registration-form">
+                <h4 class="text-center mb-3">Реєстрація</h4>
+                <div class="mb-3">
+                    <label for="name" class="form-label text-white">Ім’я</label>
+                    <input type="text" class="form-control input-dark" id="name"  required />
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label text-white">Email</label>
+                    <input type="email" t class="form-control input-dark" id="email"  required />
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label text-white">Пароль</label>
+                    <input type="password" class="form-control input-dark" id="password"  required />
+                </div>
+                <button type="submit" class="btn btn-outline-light btn-register w-100">Зареєструватися</button>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="js/animatedStars.js"></script>
+</body>
+</html>

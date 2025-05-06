@@ -1,0 +1,71 @@
+.content-wrapper {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.btn-register {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px 15px;
+  margin-left: 10%;
+  margin-top: 10%;
+
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.btn-register:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
+.btn-register:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.registration-form label {
+  display: block; /* забезпечує, що label буде зверху */
+   margin-bottom: 0.4rem; /* відступ між label і input */
+}
+
+.registration-form {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.input-dark {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: white;
+}
+
+.input-dark::placeholder {
+  color: #ccc;
+}
+
+.input-dark:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
